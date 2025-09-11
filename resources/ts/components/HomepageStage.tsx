@@ -5,7 +5,14 @@ import { ProductStack } from "./ProductStack";
 
 export function HomepageStage() {
   return (
-    <Canvas className="homepage__three-stage">
+    <Canvas
+      camera={{
+        fov: 90,
+        position: [0, 4, 5],
+      }}
+      className="homepage__three-stage"
+      flat
+    >
       <ProductStack />
     </Canvas>
   );

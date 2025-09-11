@@ -13,11 +13,6 @@ fn template(context, props, content) {
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {if context.is_watching {
-          component {
-            <meta name="poet:is_watching" value="true">
-          }
-        }}
         {if !context.front_matter.description.is_empty() {
           component {
             <meta name="description" content={context.front_matter.description}>

@@ -1,24 +1,26 @@
-import { useFrame } from "@react-three/fiber";
-import React, { useRef } from "react";
-import { type Mesh } from "three";
+import React from "react";
+import { ProductStackTile } from "./ProductStackTile";
 
 export function ProductStack() {
-  const meshRef = useRef<null | Mesh>(null);
-
-  useFrame(function (state, delta) {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += delta;
-    }
-  });
-
   return (
     <>
-      <mesh ref={meshRef}>
-        <boxGeometry args={[2, 2, 2]} />
-        <meshPhongMaterial />
-      </mesh>
-      <ambientLight intensity={0.1} />
-      <directionalLight position={[0, 0, 5]} color="red" />
+      <ProductStackTile
+        color="hotpink"
+        label="Grouper"
+        position={[-2.5, 2, 0]}
+      />
+      <ProductStackTile
+        color="cyan"
+        label="Poet"
+        position={[-2.5, 1, 0]}
+      />
+      <ProductStackTile
+        color="yellow"
+        label="Paddler"
+        position={[-2.5, 0, 0]}
+      />
+      <ambientLight intensity={1.5} />
+      <directionalLight position={[0, 0, 5]} color="white" />
     </>
   );
 }

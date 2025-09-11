@@ -14,7 +14,7 @@ jarmuz({
     case matches("resources/**/*.{mjs,ts,tsx}"):
       schedule("tsc");
       break;
-    case matches("resources/ts/**/*.css"):
+    case matches("resources/ts/components/*.module.css"):
       schedule("tcm");
     case matches("resources/**/*.{avif,css,gif,jpg,jpeg,svg,webp}"):
       schedule("esbuild-development");
