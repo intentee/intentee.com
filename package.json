@@ -11,11 +11,9 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "esbuild": "^0.25.9",
-    "eslint": "^9.33.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
     "fs-extra": "^11.3.1",
     "jarmuz": "^0.8.0",
-    "jarmuz-preset-poet": "^0.4.0",
+    "jarmuz-preset-poet": "file:../jarmuz-preset-poet",
     "node-notifier": "^10.0.1",
     "prettier": "^3.6.2",
     "prettier-plugin-organize-imports": "^4.2.0",
@@ -28,12 +26,17 @@
     "typescript-eslint": "^8.40.0"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.3.0",
+    "@types/three": "^0.180.0",
+    "@typescript/native-preview": "^7.0.0-dev.20250911.1",
     "clsx": "^2.1.1",
-    "idiomorph": "^0.7.3",
+    "debounce": "^2.2.0",
     "js-toml": "^1.0.2",
     "nanoid": "^5.1.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "three": "^0.180.0",
+    "throttleit": "^2.1.0",
     "wouter": "^3.7.1",
     "zod": "^4.1.5"
   }

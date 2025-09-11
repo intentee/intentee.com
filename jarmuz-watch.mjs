@@ -11,7 +11,7 @@ jarmuz({
     case initial:
       schedule("poet-watch");
       return;
-    case matches("resources/**/*.{ts,tsx}"):
+    case matches("resources/**/*.{mjs,ts,tsx}"):
       schedule("tsc");
       break;
     case matches("resources/ts/**/*.css"):

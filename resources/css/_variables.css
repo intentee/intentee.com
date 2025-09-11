@@ -13,7 +13,7 @@
   --font-family-monospace: "Noto Sans Mono", monospace;
   --height-documentation-navigation: 50px;
   --height-page-navigation: 54px;
-  --height-page-footer: 100px;
+  --height-page-footer: 60px;
   --height-scrollbar: 8px;
   --line-height-base: 1.5;
   --spacing-2x: calc(2 * var(--spacing-base));

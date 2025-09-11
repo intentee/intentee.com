@@ -2,7 +2,7 @@ fn template(context, props, content) {
   context.assets.add("resources/css/layout-minimal.css");
 
   if context.is_watching {
-    context.assets.add("resources/ts/global-live-reload.ts");
+    context.assets.add("resources/ts/global-live-reload.mjs");
   }
 
   component {
@@ -13,7 +13,11 @@ fn template(context, props, content) {
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        {if context.is_watching {
+          component {
+            <meta name="poet:is_watching" value="true">
+          }
+        }}
         {if !context.front_matter.description.is_empty() {
           component {
             <meta name="description" content={context.front_matter.description}>
@@ -21,7 +25,7 @@ fn template(context, props, content) {
         }}
 
         <title>{
-          let base_title = "Poet";
+          let base_title = "Intentee";
 
           if context.front_matter.title.is_empty() {
             base_title
@@ -36,34 +40,20 @@ fn template(context, props, content) {
           <nav class="page-navigation">
             <div class="page-navigation__track">
               <a class="page-navigation__link page-navigation__link--site-name" href={context.link_to("index")}>
-                Your Page Name
+                Intentee
               </a>
-              <a class="page-navigation__link" href={context.link_to("#example-page")}>
-                See examples
+              <a class="page-navigation__link" href={context.link_to("#test-page")}>
+                Test page
               </a>
             </div>
-            <a
-              class="page-navigation__link"
-              href="https://github.com/intentee/poet"
-              target="_blank"
-            >
-              <img alt="GitHub" src={context.assets.file("resources/media/logo-github.svg")}>
-            </a>
           </nav>
           <main class="page-main">
             {content}
           </main>
           <footer class="page-footer">
-            <p>
-              Powered by <a href="https://github.com/intentee/poet" target="_blank">Poet</a>
-            </p>
             <div class="page-footer__links">
-              <a
-                href="https://github.com/intentee/poet"
-                target="_blank"
-              >
-                <img alt="GitHub" src={context.assets.file("resources/media/logo-github.svg")}>
-              </a>
+              <a href="https://github.com/intentee" target="_blank">Open Source</a>
+              <a href="mailto:hello@intentee.com" target="_blank">Contact us</a>
             </div>
           </footer>
         </div>
