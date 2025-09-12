@@ -5,22 +5,25 @@ export function ProductStack() {
   return (
     <>
       <ProductStackTile
-        color="hotpink"
+        color="white"
+        description="Connect your teams to achieve optimal MCP implementations"
+        layer={2}
         label="Grouper"
-        position={[-2.5, 2, 0]}
       />
       <ProductStackTile
-        color="cyan"
+        color="white"
+        description="Make your docs accessible in AI tools"
+        layer={1}
         label="Poet"
-        position={[-2.5, 1, 0]}
       />
       <ProductStackTile
-        color="yellow"
+        color="white"
+        description="Keep AI on your own servers"
+        layer={0}
         label="Paddler"
-        position={[-2.5, 0, 0]}
       />
-      <ambientLight intensity={1.5} />
-      <directionalLight position={[0, 0, 5]} color="white" />
+      <ambientLight intensity={3} />
+      <directionalLight position={[0, 0, 5]} color="white" lookAt={[4, 0, 0]} />
     </>
   );
 }

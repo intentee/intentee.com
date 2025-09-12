@@ -4,9 +4,7 @@ fn template(context, props, content) {
 
   component {
     <LayoutMinimal>
-      <div class="homepage">
-        <div data-poet-permanent id="stage"></div>
-      </div>
+      <div data-poet-permanent id="homepage"></div>
     </LayoutMinimal>
   }
 }

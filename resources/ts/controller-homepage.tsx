@@ -1,7 +1,7 @@
-import React from "react";
-import { HomepageStage } from "./components/HomepageStage";
-import { createRoot } from "react-dom/client";
 import { initialize } from "jarmuz-preset-poet/live-reload/initialize";
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { HomepageStage } from "./components/HomepageStage";
 
 function StageController({ stage }: { stage: HTMLElement }) {
   const root = createRoot(stage);
@@ -17,7 +17,7 @@ function StageController({ stage }: { stage: HTMLElement }) {
 }
 
 function main(signal: AbortSignal) {
-  const stage = document.getElementById("stage");
+  const stage = document.getElementById("homepage");
 
   if (!(stage instanceof HTMLElement)) {
     throw new Error("#stage element not found");

@@ -1,20 +1,7 @@
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-#stage {
+#homepage {
   display: grid;
+  height: calc(100dvh - var(--height-page-navigation));
   position: relative;
-}
-
-.homepage {
-  display: grid;
-  min-height: calc(100dvh - var(--height-page-navigation));
   width: 100%;
 
   @media (max-width: 900px) {
@@ -22,12 +9,4 @@
   }
   @media (min-width: 900px) {
   }
-}
-
-.homepage__three-stage {
-  animation-duration: 300ms;
-  animation-fill-mode: forwards;
-  animation-name: fadeIn;
-  animation-timing-function: ease-in-out;
-  opacity: 0;
 }
