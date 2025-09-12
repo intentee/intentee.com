@@ -4,13 +4,9 @@ import { Euler, Vector3, type Mesh } from "three";
 
 export function ProductStackTile({
   color,
-  description,
-  label,
   layer,
 }: {
   color: string;
-  description: string;
-  label: string;
   layer: number;
 }) {
   const meshRef = useRef<null | Mesh>(null);

@@ -4,7 +4,12 @@ import * as THREE from "three";
 
 import { ProductStack } from "./ProductStack";
 
-import { stage } from "./HomepageStage.module.css";
+import {
+  stage,
+  stage__content,
+  stage__products,
+} from "./HomepageStage.module.css";
+import { ProductStackTileLabel } from "./ProductStackTileLabel";
 
 extend(THREE as unknown as any);
 
@@ -81,6 +86,22 @@ export function HomepageStage() {
 
   return (
     <div className={stage} ref={stageRef}>
+      <div className={stage__content}>
+        <div className={stage__products}>
+          <ProductStackTileLabel
+            description="Connect your teams to achieve optimal MCP implementations"
+            label="Grouper"
+          />
+          <ProductStackTileLabel
+            description="Make your docs accessible in AI tools"
+            label="Poet"
+          />
+          <ProductStackTileLabel
+            description="Keep AI on your own servers"
+            label="Paddler"
+          />
+        </div>
+      </div>
       <canvas ref={setCanvasRef} />
     </div>
   );

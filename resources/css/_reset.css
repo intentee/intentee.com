@@ -99,10 +99,6 @@ body {
   row-gap: var(--spacing-base);
 }
 
-canvas {
-  image-rendering: pixelated;
-}
-
 ::selection {
   color: white;
   background-color: black;
