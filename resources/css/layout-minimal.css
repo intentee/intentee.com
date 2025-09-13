@@ -45,7 +45,7 @@
 }
 
 .page-navigation {
-  background-color: white;
+  background-color: var(--color-body-background);
   border-bottom: 2px solid var(--color-separator);
   box-shadow: 0 0 10px var(--color-separator);
   display: flex;

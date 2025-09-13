@@ -1,30 +1,44 @@
+import { animated, useSpring } from "@react-spring/three";
 import { useFrame } from "@react-three/fiber";
-import React, { useRef } from "react";
-import { Euler, Vector3, type Mesh } from "three";
+import React, { memo, useRef } from "react";
+import { Vector3, type Mesh } from "three";
 
-export function ProductStackTile({
-  color,
+export const ProductStackTile = memo(function ProductStackTile({
+  isHovered,
   layer,
+  productColor,
 }: {
-  color: string;
+  isHovered: boolean;
   layer: number;
+  productColor: string;
 }) {
+  const meshRotation = useRef(0);
   const meshRef = useRef<null | Mesh>(null);
   const meshPosition = new Vector3(3, -1 + 2 * layer, 0);
-  const meshRotation = new Euler(0, 0, 0);
+
+  const springProps = useSpring({
+    color: isHovered ? productColor : "white",
+    wireframe: !isHovered,
+    config: {
+      tension: 150,
+      friction: 25,
+    },
+  });
 
   useFrame(function (state, delta) {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.1 * delta;
+      meshRotation.current += 0.1 * delta;
+      meshRef.current.rotation.y = meshRotation.current;
     }
   });
 
   return (
-    <>
-      <mesh position={meshPosition} ref={meshRef} rotation={meshRotation}>
-        <boxGeometry args={[6, 0.25, 6]} />
-        <meshBasicMaterial color={color} wireframe />
-      </mesh>
-    </>
+    <animated.mesh position={meshPosition} ref={meshRef}>
+      <boxGeometry args={[6, 0.25, 6]} />
+      <animated.meshPhysicalMaterial
+        {...springProps}
+        emissive={springProps.color}
+      />
+    </animated.mesh>
   );
-}
+});

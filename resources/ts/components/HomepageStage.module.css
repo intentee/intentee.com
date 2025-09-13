@@ -30,6 +30,7 @@
 
 .stage__content {
   display: flex;
+  position: relative;
   width: 100%;
 
   @media (max-width: 900px) {
@@ -37,7 +38,7 @@
   }
   @media (min-width: 900px) {
     justify-content: flex-end;
-    max-width: 50%;
+    max-width: clamp(500px, 50%, 50%);
   }
 }
 

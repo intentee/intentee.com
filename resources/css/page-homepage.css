@@ -1,3 +1,8 @@
+.page-navigation {
+  border-bottom: none;
+  box-shadow: none;
+}
+
 #homepage {
   display: grid;
   height: calc(100dvh - var(--height-page-navigation));
