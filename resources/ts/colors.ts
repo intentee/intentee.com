@@ -1,4 +1,4 @@
 export const PADDLER_HIGHLIGHT_COLOR = "yellow";
 export const POET_HIGHLIGHT_COLOR = "cyan";
 export const GROUPER_HIGHLIGHT_COLOR = "deeppink";
-export const REWIRE_HIGHLIGHT_COLOR = "red";
+export const REWIRE_HIGHLIGHT_COLOR = "lime";
