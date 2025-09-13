@@ -6,6 +6,7 @@ import { useAnimationFrame } from "../hooks/useAnimationFrame";
 
 import {
   label__description,
+  label__releaseDate,
   label__title,
   label as labelCssClass,
 } from "./ProductStackTileLabel.module.css";
@@ -17,6 +18,7 @@ export function ProductStackTileLabel({
   label,
   onInteractionStateChange,
   productColor,
+  releaseDate,
 }: {
   description: string;
   href: string;
@@ -24,6 +26,7 @@ export function ProductStackTileLabel({
   label: string;
   onInteractionStateChange: (state: LabelInteractionState) => void;
   productColor: string;
+  releaseDate: string;
 }) {
   const [isHovered, setIsHovered] = useState<boolean>(false);
   const [labelRef, setLabelRef] = useState<null | HTMLElement>(null);
@@ -66,6 +69,7 @@ export function ProductStackTileLabel({
     >
       <div className={label__title}>{label}</div>
       <div className={label__description}>{description}</div>
+      <div className={label__releaseDate}>{releaseDate}</div>
     </a>
   );
 }

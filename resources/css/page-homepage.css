@@ -12,6 +12,4 @@
   @media (max-width: 900px) {
     margin-top: var(--height-page-navigation);
   }
-  @media (min-width: 900px) {
-  }
 }

@@ -5,6 +5,7 @@ import {
   GROUPER_HIGHLIGHT_COLOR,
   PADDLER_HIGHLIGHT_COLOR,
   POET_HIGHLIGHT_COLOR,
+  REWIRE_HIGHLIGHT_COLOR,
 } from "../colors";
 import { ProductStackTile } from "./ProductStackTile";
 
@@ -15,6 +16,11 @@ export function ProductStack({
 }) {
   return (
     <>
+      <ProductStackTile
+        productColor={REWIRE_HIGHLIGHT_COLOR}
+        isHovered={"rewire" === hoveredProduct}
+        layer={3}
+      />
       <ProductStackTile
         productColor={GROUPER_HIGHLIGHT_COLOR}
         isHovered={"grouper" === hoveredProduct}

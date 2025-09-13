@@ -1,5 +1,4 @@
 .label {
-  display: flex;
   text-decoration: none;
   text-wrap: pretty;
 
@@ -8,6 +7,7 @@
   }
 
   @media (max-width: 900px) {
+    display: flex;
     flex-direction: column;
     padding: var(--spacing-base);
     row-gap: var(--spacing-half);
@@ -15,8 +15,13 @@
   @media (min-width: 900px) {
     align-items: center;
     column-gap: var(--spacing-2x);
-    flex-direction: row;
+    display: grid;
+    grid-template-areas:
+      "title description"
+      "title release_date";
+    grid-template-columns: 230px 160px;
     padding: var(--spacing-base) var(--spacing-base-plus-half);
+    row-gap: var(--spacing-half);
   }
 }
 
@@ -30,8 +35,13 @@
   @media (max-width: 900px) {
   }
   @media (min-width: 900px) {
-    padding: var(--spacing-base) 0;
-    width: 160px;
+    grid-area: description;
+  }
+}
+
+.label__releaseDate {
+  @media (min-width: 900px) {
+    grid-area: release_date;
   }
 }
 
@@ -43,5 +53,7 @@
   @media (max-width: 900px) {
   }
   @media (min-width: 900px) {
+    grid-area: title;
+    text-align: right;
   }
 }

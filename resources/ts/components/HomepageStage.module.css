@@ -38,7 +38,7 @@
   }
   @media (min-width: 900px) {
     justify-content: flex-end;
-    max-width: clamp(500px, 50%, 50%);
+    max-width: clamp(600px, 50%, 50%);
   }
 }
 
@@ -48,6 +48,7 @@
   height: 100%;
   justify-content: center;
   row-gap: var(--spacing-2x);
+  width: 100%;
 
   @media (min-width: 900px) {
     align-items: flex-end;

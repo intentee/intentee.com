@@ -37,9 +37,14 @@ fn template(context, props, content) {
               <a class="page-navigation__link page-navigation__link--site-name" href={context.link_to("index")}>
                 Intentee
               </a>
-              <a class="page-navigation__link" href={context.link_to("#test-page")}>
-                Test page
-              </a>
+              {/*
+                <a class="page-navigation__link" href={context.link_to("#businesses")}>
+                  Businesses
+                </a>
+                <a class="page-navigation__link" href={context.link_to("#community")}>
+                  Community
+                </a>
+              */}
             </div>
           </nav>
           <main class="page-main">

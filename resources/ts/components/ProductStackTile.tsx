@@ -14,7 +14,7 @@ export const ProductStackTile = memo(function ProductStackTile({
 }) {
   const meshRotation = useRef(0);
   const meshRef = useRef<null | Mesh>(null);
-  const meshPosition = new Vector3(3, -1 + 2 * layer, 0);
+  const meshPosition = new Vector3(3, -1 + 1.5 * layer, 0);
 
   const springProps = useSpring({
     color: isHovered ? productColor : "white",

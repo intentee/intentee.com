@@ -1,1 +1,1 @@
-export type LabelId = "grouper" | "paddler" | "poet";
+export type LabelId = "grouper" | "paddler" | "poet" | "rewire";
