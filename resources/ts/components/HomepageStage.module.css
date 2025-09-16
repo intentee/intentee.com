@@ -38,7 +38,7 @@
   }
   @media (min-width: 900px) {
     justify-content: flex-end;
-    max-width: clamp(600px, 50%, 50%);
+    max-width: clamp(600px, 60%, 60%);
   }
 }
 

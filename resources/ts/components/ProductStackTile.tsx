@@ -17,7 +17,7 @@ export const ProductStackTile = memo(function ProductStackTile({
   const meshPosition = new Vector3(3, -1 + 1.5 * layer, 0);
 
   const springProps = useSpring({
-    color: isHovered ? productColor : "white",
+    color: isHovered ? productColor : "#eee",
     wireframe: !isHovered,
     config: {
       tension: 150,
