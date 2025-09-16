@@ -1,9 +1,16 @@
+body:has(.label:hover) .label:not(:hover) {
+  background-color: transparent;
+}
+
 .label {
+  background-color: #ffffffbb;
+  position: relative;
   text-decoration: none;
   text-wrap: pretty;
 
   &:hover {
     background-color: var(--product-color);
+    transition: background-color 100ms ease-in-out;
   }
 
   @media (max-width: 900px) {
