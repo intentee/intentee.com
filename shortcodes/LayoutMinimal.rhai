@@ -10,6 +10,7 @@ fn template(context, props, content) {
     <html lang="en">
       <head>
         <link rel="canonical" href={context.reference.canonical_link}>
+        <link rel="icon" href={context.assets.file("resources/media/favicon.svg")}>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">

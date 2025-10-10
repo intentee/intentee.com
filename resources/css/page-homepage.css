@@ -5,7 +5,6 @@
 
 #homepage {
   display: grid;
-  min-height: calc(100dvh - var(--height-page-navigation));
   position: relative;
   width: 100%;
 

@@ -1,0 +1,9 @@
+.standalone-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: var(--spacing-2x) 0;
+  max-width: 80ch;
+  padding: var(--spacing-2x) var(--spacing-base);
+  width: 100%;
+}
