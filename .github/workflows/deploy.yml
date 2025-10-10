@@ -1,4 +1,4 @@
-name: Deploy Paddler to GitHub Pages
+name: Deploy Intentee Homepage to GitHub Pages
 
 on:
   workflow_dispatch:

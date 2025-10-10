@@ -54,7 +54,40 @@ fn template(context, props, content) {
           <footer class="page-footer">
             <div class="page-footer__links">
               <a href="https://github.com/intentee" target="_blank">Open Source</a>
+              <a href={context.link_to("press-kit")}>Press kit</a>
               <a href="mailto:hello@intentee.com" target="_blank">Contact us</a>
+            </div>
+            <div class="page-footer__links">
+              <a
+                href="https://bsky.app/profile/intentee.bsky.social"
+                target="_blank"
+              >
+                <img alt="Bluesky" src={context.assets.file("resources/media/logo-bluesky.svg")}>
+              </a>
+              <a
+                href="https://discord.gg/92x3Z8a4gj"
+                target="_blank"
+              >
+                <img alt="Discord" src={context.assets.file("resources/media/logo-discord.svg")}>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/intentee"
+                target="_blank"
+              >
+                <img alt="LinkedIn" src={context.assets.file("resources/media/logo-linkedin.svg")}>
+              </a>
+              <a
+                href="https://x.com/intentee"
+                target="_blank"
+              >
+                <img alt="X" src={context.assets.file("resources/media/logo-x.svg")}>
+              </a>
+              <a
+                href="https://www.youtube.com/@intentee"
+                target="_blank"
+              >
+                <img alt="YoutTube" src={context.assets.file("resources/media/logo-yt.svg")}>
+              </a>
             </div>
           </footer>
         </div>
