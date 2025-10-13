@@ -10,7 +10,7 @@ title = "About us"
 
 Intentee develops products that help organizations self-host and use AI, from running open-source LLMs at scale to creating interactive documentation, collaborating on MCP servers, and letting non-technical employees create tools they need themselves.
 
-## Vision
+## Our vision
 
 In the near future, most digital products won't need to be built by programmers. This is a clear trend, and we want to radically accelerate it. We're building tools that will enable other employees and domain experts to build most applications and digitize processes themselves, in a way that doesn't just avoid adding to their workload, but actually makes their jobs easier.
 
