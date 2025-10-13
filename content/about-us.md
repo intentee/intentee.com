@@ -1,7 +1,7 @@
 +++
 description = "Information about the company and team"
 layout = "LayoutStandalonePage"
-title = "Press kit"
+title = "About us"
 +++
 
 # About Intentee

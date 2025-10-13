@@ -52,9 +52,10 @@ fn template(context, props, content) {
             {content}
           </main>
           <footer class="page-footer">
-            <div class="page-footer__links">
+            <div class="page-footer__links page-footer__links--pages">
+              <a href={context.link_to("about-us")}>About us</a>
               <a href="https://github.com/intentee" target="_blank">Open Source</a>
-              <a href={context.link_to("press-kit")}>Press kit</a>
+              <a href="https://post-software.intentee.com/" target="_blank">Post Software</a>
               <a href="mailto:hello@intentee.com" target="_blank">Contact us</a>
             </div>
             <div class="page-footer__links">
