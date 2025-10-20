@@ -130,7 +130,7 @@ export function HomepageStage() {
             releaseDate="TBA"
           />
           <ProductStackTileLabel
-            description="Connect your teams to achieve optimal MCP implementations"
+            description="Build MCP servers the proper way"
             href="https://grouper.intentee.com"
             id="grouper"
             label="Grouper"

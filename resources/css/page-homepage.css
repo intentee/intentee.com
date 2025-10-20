@@ -1,4 +1,10 @@
+.page {
+  background-image: radial-gradient(circle, #00000033 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
 .page-navigation {
+  background-color: transparent;
   border-bottom: none;
   box-shadow: none;
 }

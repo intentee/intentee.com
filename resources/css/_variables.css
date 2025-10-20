@@ -11,12 +11,14 @@
   --duration-transition-hover: 100ms;
   --font-family-body: "Inter", sans-serif;
   --font-family-monospace: "Noto Sans Mono", monospace;
+  --font-family-serif: "Instrument Serif", serif;
   --height-documentation-navigation: 50px;
   --height-page-navigation: 54px;
   --height-page-footer: 60px;
   --height-scrollbar: 8px;
   --line-height-base: 1.5;
   --spacing-2x: calc(2 * var(--spacing-base));
+  --spacing-4x: calc(4 * var(--spacing-base));
   --spacing-base: 16px;
   --spacing-half: calc(0.5 * var(--spacing-base));
   --spacing-base-plus-half: calc(1.5 * var(--spacing-base));
