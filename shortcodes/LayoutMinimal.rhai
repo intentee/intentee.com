@@ -56,7 +56,8 @@ fn template(context, props, content) {
               <a href={context.link_to("about-us")}>About us</a>
               <a href="https://github.com/intentee" target="_blank">Open Source</a>
               <a href="https://post-software.intentee.com/" target="_blank">Post Software</a>
-              <a href="mailto:hello@intentee.com" target="_blank">Contact us</a>
+              <a href={context.link_to("press")}>Press</a>
+              <a href={context.link_to("contact-us")}>Contact us</a>
             </div>
             <div class="page-footer__links">
               <a

@@ -47,9 +47,3 @@ We're highly focused on open-source AI to ensure organizations can better contro
     - [linkedin](https://linkedin.com/in/malgorzata-zagajewska)
     - [mail](mailto:gosia@intentee.com)
 </TeamMember>
-
-## Resources
-
-<DownloadLink file="resources/media/logos/intentee-logos.zip" file_name="intentee-logos.zip">
-    Download logos
-</DownloadLink>
